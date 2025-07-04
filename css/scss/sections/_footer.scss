@@ -1,0 +1,43 @@
+.footer
+{  p
+    {
+        color: gray;
+    }
+.footer-box
+{
+    .icon
+    {
+        color: $primary;
+    }
+}
+
+.media
+{
+    
+    background-color:rgb(47, 47, 47);
+    padding: 10px 90px;
+    margin: 0;
+    p
+    {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.links
+{display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    ul {
+        list-style: none;
+        padding: 0; 
+        margin: 0;  
+      }
+      
+}
+.last-thing
+{
+    padding: 40px 0px;
+    text-align: center;
+}
+}

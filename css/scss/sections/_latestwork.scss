@@ -1,0 +1,56 @@
+.latest-work
+{
+    .row
+    {
+        button
+        {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 5px;
+            color: $primary;
+            border-color: $primary;
+        }
+        button:hover
+        {
+            color: white;
+            border-color:$secondry;
+            background-color: $secondry;
+        }
+        .box
+        {position: relative;
+            overflow: hidden;
+          
+            width: 100%;
+            img
+            {
+                height: 300px;
+                width: 100%;
+            }
+            &:hover
+            {
+            .caption
+             {
+                opacity: 1;
+                visibility: visible;
+      
+             }
+            }
+            .caption
+            {          @include transition;
+                position: absolute;
+                top: 0;
+               background-color:rgba($color: $primary, $alpha:.7);
+               color: white;
+               width: 100%;
+               height: 100%;
+               opacity: 0;
+               visibility: hidden;
+              
+               h4
+               {
+                text-transform:uppercase;
+               }
+            }
+        }
+    }
+}
